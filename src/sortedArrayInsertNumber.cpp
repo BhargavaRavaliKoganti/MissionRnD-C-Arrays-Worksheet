@@ -37,6 +37,7 @@ int * sortedArrayInsertNumber(int *Arr, int len, int num)
         index = first;
     else
         index = first + 1;
+	Arr = (int *)realloc(Arr, 1*sizeof(int));
 	if (index == len)
 		Arr[index - 1] = num;
 	while (index < len) {
